@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./files/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./index.js"></script>
+    <title>GTCO</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="preloader_sec" class="preloader">
+      <div class="preloader_inner"></div>
+    </div>
+    <!-- ----------------------------HEADER/NAV SECTION---------------------------- -->
+    <header id="nav_sec">
+      <div class="navbar">
+        <div class="navbar_inner">
+          <a href="#">
+            <img src="./files/images/favicon.png" alt="logo" class="nav_logo" />
+          </a>
+
+          <div class="menu_items">
+            <ul class="menu_lists">
+              <a href="#">
+                <li class="active">Home</li>
+              </a>
+              <a href="#">
+                <li>About us</li>
+              </a>
+              <a href="#">
+                <li>Services</li>
+              </a>
+              <a href="#">
+                <li>Contact us</li>
+              </a>
+              <a href="#">
+                <li>Blog</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="toogle_btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+
+      <!--       DROPDOWN MENU       -->
+
+      <div class="dropdown_menu">
+        <ul class="menu_lists">
+          <a href="#nav_sec">
+            <li class="active">Home</li>
+          </a>
+          <a href="#about_id">
+            <li>About us</li>
+          </a>
+          <a href="#services_id">
+            <li>Services</li>
+          </a>
+          <a href="#contact_id">
+            <li>Contact us</li>
+          </a>
+          <a href="#news_id">
+            <li>Blog</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="main_inner">
+        <!-- ----------------------------HERO SECTION---------------------------- -->
+        <section id="hero" class="hero_sec">
+          <div class="hero_sec_inner container_main">
+            <div class="hero_left">
+              <div class="hero_left_inner">
+                <h2 class="hero_left_header primary_header">
+                  Same Orange
+                  <br />
+                  MORE ORANGE
+                </h2>
+
+                <div class="hero_left_quotes fw_500 small_quotes hero">
+                  <p>www.gtcopic.com</p>
+                </div>
+
+                <button class="btn_main">
+                  Learn More
+                  <span>
+                    <i class="fa fa-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero_right">
+              <img
+                src="./files/svgs/hero_icon1.svg"
+                alt="icon"
+                class="icon_1"
+              />
+              <img
+                src="./files/svgs/hero_icon2.svg"
+                alt="icon"
+                class="icon_2"
+              />
+              <img
+                src="./files/svgs/hero_icon3.svg"
+                alt="icon"
+                class="icon_3"
+              />
+              <div class="hero_right_inner">
+                <img src="./files/images/hero_img.png" alt="hero-bg" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <!-- Video Section -->
+          <div class="video-section">
+            <div class="text-section" id="text-section">
+              <h2>GTCO FOOD & DRINK</h2>
+              <p>Please enter your details</p>
+              <button id="enter-button">Enter Details</button>
+            </div>
+            <video
+              id="intro-video"
+              class="video-fullscreen"
+              width="75%"
+              autoplay
+              muted
+              controls
+            >
+              <source src="flow.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Form Section -->
+            <div class="form-section" id="form-section">
+              <h2>GTCO FOOD & DRINK</h2>
+              <p>Enter your information</p>
+              <input type="text" placeholder="First Name *" required />
+              <input type="text" placeholder="Last Name *" required />
+              <input type="email" placeholder="Email *" required />
+              <input type="text" placeholder="Contact Number *" required />
+              <div class="checkbox">
+                <input type="checkbox" id="terms" required />
+                <label for="terms"
+                  >Accept <a href="#">Terms & Conditions</a></label
+                >
+              </div>
+              <div class="buttons">
+                <button id="cancel-button" style="background-color: #ccc">
+                  Cancel
+                </button>
+                <button
+                  style="background-color: rgb(82, 189, 255); color: white"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
