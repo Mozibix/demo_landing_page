@@ -69,6 +69,8 @@ const textSection = document.getElementById("text-section");
 const formSection = document.getElementById("form-section");
 const enterButton = document.getElementById("enter-button");
 const cancelButton = document.getElementById("cancel-button");
+const container = document.getElementById("container-sec");
+const submitButton = document.getElementById("submit-button");
 
 // Initially show text section, then delay the video load by 1 second
 setTimeout(() => {
@@ -91,6 +93,12 @@ enterButton.onclick = () => {
 
 // Hide the form and go back to text section when "Cancel" button is clicked
 cancelButton.onclick = () => {
+  container.style.display = "none";
+  formSection.style.display = "none";
+  textSection.style.display = "flex";
+};
+submitButton.onclick = () => {
+  container.style.display = "none";
   formSection.style.display = "none";
   textSection.style.display = "flex";
 };
