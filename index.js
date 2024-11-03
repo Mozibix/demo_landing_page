@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     preloader.classList.add("hidden");
-  }, 1000);
+  }, 100);
 });
 
 /*  */
@@ -63,7 +63,6 @@ document.onscroll = (e) => {
   }
 };
 
-// Grab elements
 const video = document.getElementById("intro-video");
 const textSection = document.getElementById("text-section");
 const formSection = document.getElementById("form-section");
@@ -72,18 +71,9 @@ const cancelButton = document.getElementById("cancel-button");
 const container = document.getElementById("container-sec");
 const submitButton = document.getElementById("submit-button");
 
-// Initially show text section, then delay the video load by 1 second
-setTimeout(() => {
-  textSection.style.display = "none"; // Hide text section
-  video.style.display = "block"; // Show video after 1 second delay
-  video.play(); // Ensure video starts playing
-}, 1000);
-
-// When the video ends, return to the text section
-video.onended = () => {
-  video.style.display = "none"; // Hide video after playing
-  textSection.style.display = "flex"; // Show the text and button again
-};
+// Play video and loop it indefinitely
+video.loop = true;
+video.play();
 
 // Show the form when "Enter Details" button is clicked
 enterButton.onclick = () => {
@@ -93,12 +83,12 @@ enterButton.onclick = () => {
 
 // Hide the form and go back to text section when "Cancel" button is clicked
 cancelButton.onclick = () => {
-  container.style.display = "none";
   formSection.style.display = "none";
   textSection.style.display = "flex";
 };
+
+// Hide container and reset view after form submission
 submitButton.onclick = () => {
-  container.style.display = "none";
-  formSection.style.display = "none";
-  textSection.style.display = "flex";
+  // formSection.style.display = "none";
+  // textSection.style.display = "flex";
 };

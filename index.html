@@ -35,11 +35,11 @@
 
           <div class="menu_items">
             <ul class="menu_lists">
-              <a href="#">
+              <a href="./index.html">
                 <li class="active">Home</li>
               </a>
-              <a href="#">
-                <li>About us</li>
+              <a href="./privacy.html">
+                <li>Privacy</li>
               </a>
               <a href="#">
                 <li>Services</li>
@@ -63,11 +63,11 @@
 
       <div class="dropdown_menu">
         <ul class="menu_lists">
-          <a href="#nav_sec">
+          <a href="./index.html">
             <li class="active">Home</li>
           </a>
-          <a href="#about_id">
-            <li>About us</li>
+          <a href="./privacy.html">
+            <li>Privacy</li>
           </a>
           <a href="#services_id">
             <li>Services</li>
@@ -134,11 +134,6 @@
         <div id="container-sec" class="container">
           <!-- Video Section -->
           <div class="video-section">
-            <div class="text-section" id="text-section">
-              <h2>GTCO FOOD & DRINK</h2>
-              <p>Please enter your details</p>
-              <button id="enter-button">Enter Details</button>
-            </div>
             <video
               id="intro-video"
               class="video-fullscreen"
@@ -150,9 +145,16 @@
               <source src="flow.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          </div>
+          <div class="video-section">
+            <div class="text-section" id="text-section">
+              <h2>GTCO FOOD & DRINK</h2>
+              <p>Please enter your details</p>
+              <button id="enter-button">Enter Details</button>
+            </div>
 
             <!-- Form Section -->
-            <div class="form-section" id="form-section">
+            <form class="form-section" id="form-section">
               <h2>GTCO FOOD & DRINK</h2>
               <p>Enter your information</p>
               <input type="text" placeholder="First Name *" required />
@@ -162,7 +164,7 @@
               <div class="checkbox">
                 <input type="checkbox" id="terms" required />
                 <label for="terms"
-                  >Accept <a href="#">Terms & Conditions</a></label
+                  >Accept <a href="privacy.html">Terms & Conditions</a></label
                 >
               </div>
               <div class="buttons">
@@ -176,7 +178,7 @@
                   Submit
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
